@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        body{
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            background-color: white;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style: none;
+
+        }
+        header{
+            top: 0;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            background-color: black;
+            color: white;
+        }
+        .left-container{  
+            display: flex;
+            justify-content: space-around;
+        }
+        .left-container div{
+            margin: 1rem;
+        }
+        .class-line{
+            display: block;
+            width: 2rem;
+            height: .2rem;
+            background-color: #fff;
+            border-radius: 40px;
+            margin: .3rem;  
+          }
+          .menu-lists ul {
+            display: flex;
+            list-style: none;
+            text-decoration: none;
+            justify-content: space-between;
+          }
+          .menu-lists ul li{
+            margin: 0.5rem;
+          }
+          .cnn{
+            background-color: red;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+          .right-container{
+            display: flex;
+            justify-content: space-between;
+          }
+          .right-container div{
+            margin: 1rem;
+          }
+          .class-top{
+            display: flex;
+            width: 100%;
+            font-size: 0.7rem;
+            margin: 1rem;
+          }
+          .headlines{
+            display: flex;
+            justify-content: space-between;
+            margin: 1rem;
+          }
+          .h-type{
+            color: red;
+          }
+          .updates{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height:500px ;
+        
+          }
+          .updates div{
+            height:500px;
+            width: 400px;
+            margin: 15px;
+          
+          }
+        
+  
+          .left-updates-top{
+            font-weight: bold;
+            font-size: 2rem;
+          }
+          .image1{
+            max-width: 100%;
+
+          }
+      
+          
+
+          .right-updates-top{
+            font-weight: bold;
+            font-size: 2rem;
+          }
+          .right-updates .para{
+            padding-bottom: 20px;
+             font-weight: bolder;
+             font-size: 1rem;
+        }
+          hr{
+            padding-bottom:5px;
+          }
+        .left-updates .para{
+            padding-bottom: 20px;
+             font-weight: bolder;
+             font-size: 1rem;
+        }
+        .left-updates-top1{
+          padding-top: 60px;
+        }
+        .left-updates3 p{
+            color: grey;
+             
+        }
+        .middle-updates1{
+          padding-top:60px ;
+        }
+  
+        .middle-updates-top{
+            font-weight: bold;
+            font-size: 2rem;
+          }
+        .middle-updates .para{
+          padding-bottom:  20px ;
+            font-weight: bolder;
+            font-size: 1rem;
+        }
+       
+        .right-updates-top1{
+          padding-top: 30px;
+        }
+        .con{
+          max-width: 1170px;
+        
+          margin: auto;
+        }
+        .footer1{
+          display: flex;
+          flex-wrap: wrap;
+        }
+        ul{
+          list-style: none;
+        }
+      .footer{
+        background-color: rgb(3, 3, 3);
+       
+        padding: 40px 0;
+        position:relative;
+        right: 0;
+        left: 0;
+        bottom: -145rem;
+      }
+ .footer-col{
+  width: 25%;
+  padding: 0 15px;
+
+ }
+ .footer-col h4{
+  font-size: 18px;
+  color: #fff;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+  font-weight: 500;
+  position: relative;
+ }
+ .footer-col h4::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #e91e63;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+ }
+ .footer-col ul li:not(:last-child){
+  margin-bottom: 10px;
+ }
+ .footer-col ul li a{font-size: 16px;
+  text-transform: capitalize;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 300;
+  color:#bbbb;
+  display: block;
+ 
+
+ }
+ .footer-col ul li a:hover{
+  color:#fff;
+  padding-left:10px;
+ }
+ .footer-col .links a{
+        display: inline-block;
+        height: 40px;
+        width: 40px;
+        background-color: rgba(70, 68, 68, 0.993);
+        margin: 0 10px 10px 0;
+        text-align: center;
+        line-height: 40px;
+        border-radius: 50%;
+        color: #fff;
+ }
+ @media(max-width: 767px){
+
+ }
+    </style>
+</head>
+<body>
+    <header >
+        <div class="left-container">
+            <label>
+                <span class="class-line"></span>
+                <span class="class-line"></span>
+                <span class="class-line"></span>
+            </label>
+            <div class="menu-lists">
+                <ul>
+                    <li class="cnn">SUN NEWS</li>
+                    <li><a href="politics.html">politics</a></li>
+                    <li><a href="sports.html">Sports</a></li>
+                    <li><a href="entertainment.html">Entertainment</a></li>
+                </ul>
+            </div>
+        </div>
+      <!--<div class="right-container">
+            <div class="audio">Audio</div>
+                <div class="search">Search</div>
+                <div class="log-in">Log in</div>
+            
+        </div> -->
+
+    </header>
+    <section class="class-top">
+        <div class="headlines">
+            <h1 class="h-type">TRENDING:</h1>
+            <h1 class="h-title">Bangladesh | Gen Z</h1>
+          
+        </div>
+        <div class="headlines">
+            <h1 class="h-type">PODCAST:</h1>
+            <h1 class="h-title">WORLD NEWS</h1>
+        </div>
+        <div class="headlines">
+            <h1 class="h-type">WORLD NEWS: </h1>
+            <h1 class="h-title">In photos | Information </h1>
+        </div>
+       
+    </section>
+
+    <section class="updates">
+      <div>
+        <div class="left-updates">
+            <h1 class="left-updates-top">Sheikh Hasina To Return To Bangladesh For Elections, Says Son </h1>
+           <p>  Sheikh Hasina To Return To Bangladesh For Elections, Says Son
+Foreign Minister S Jaishankar said he spoke to his British counterpart about Bangladesh but did not share any details.</p>
+           <p> <img src="images/ban1.webp" class="image1"/>Sheikh Hasina's party does not feature in the interim government after a student-led uprising (file)</p>
+            <p class="para">
+
+<b>New Delhi:</b>Former Bangladesh Prime Minister Sheikh Hasina will return to her country when its new caretaker government decides to hold elections, her son has said.<br><br>
+Hasina fled to India on Monday after weeks of deadly protests forced her to quit. A caretaker government led by Nobel Peace laureate Muhammad Yunus was sworn in on Thursday, which will be tasked with holding elections.<br><br>
+
+Speaking to the Times of India, her son Sajeeb Wazed Joy, who is based in the US, said, "For the time being, she (Hasina) is in India. She will go back to Bangladesh the moment the interim government decides to hold an election."<br><br>
+Hasina's Awami League party does not feature in the interim government, following a student-led uprising against the long-time former prime minister whose exit came after nationwide violence killed about 300 people and injured thousands.<br><br>
+She is sheltering in a safe house in the New Delhi area. Indian media has reported that she plans to seek asylum in Britain, but the British Home Office has declined to comment.<br><br>
+Foreign Minister S Jaishankar said on Thursday he spoke to his British counterpart about Bangladesh but did not share any details.<br></p>
+
+<h1 class="left-updates-top1"><hr>How Bangladesh’s ‘Gen Z’ protests brought down PM Sheikh Hasina</h1>
+                     <p class="p">Almost everyone in Mundakkai, Chooralmala and other parts of the landslide-hit Wayanad hills trace their ancestry to people who were brought by the British from various parts of South India to work on the plantations. Ms Hasina ruled Bangladesh with an iron fist, her time in power characterised by a ruthless approach to her critics, deeply flawed elections and the mass arrest of opposition politicians to the point where there was very little space left for dissent in the country.
+
+                        For many like Ms Rehman, these demonstrations were a watershed moment, the first time they had felt compelled to take to the streets in protest. “We have heard about the history of protests [in Bangladesh] but I never thought I’d partake in one,” she says.
+                        
+                        “We didn’t think we had the courage to stand up to the ruling party but it seemed real when we marched toward her official residence,” she adds.
+                        “It is a historic day in Bangladesh as what started out as a student-led movement to change the civil service quota system transformed into a revolution that ousted the 15-year rule of Sheikh Hasina,” says Sabrina Karim, associate professor of government at Cornell University.
+                        <h1 class="left-updates-top1"><hr>People celebrate the resignation of prime minister Sheikh Hasina in Dhaka (Reuters)</h1>
+                      
+                        <img src="images/gen12.avif" class="image1"/>
+                        “This might very well be the first successful Gen Z-led revolution.”
+                        
+                        If it can be said that they come from a generation notorious for spending their lives absorbed by their screens, protesters used this to their advantage as those same social media platforms were put to good use organising the protests that started as peaceful demonstrations. The situation turned violent when the Bangladesh Chhatra League – the student wing of the ruling party – began counter-protests, leading to clashes.
+                        
+                        Sensing a challenge to her rule, Ms Hasina ordered law enforcement agencies to unleash brute force against the protesters to try to quash them – killing more than 280 people in July.</p>
+                   <p class="p1">  <img src="images/gen11.avif" class="image1"/>Protests began in Bangladesh last month over a controversial government job-quota system and transformed into nationwide unrest following a harsh crackdown by authorities. Nearly 300 people were killed within weeks in one of the most violent phases of Prime Minister Sheikh Hasina’s 15-year rule.</p>
+                      
+                      
+                     
+        </div>
+      </div>
+        <div>
+        <div class="middle-updates">
+        <h1 class="middle-updates-top">Japan's Megaquake Advisory Follows 7.1 Magnitude Tremor</h1>   
+        Even with larger tremors the impact is generally contained thanks to advanced building techniques and well-practised emergency procedures.
+
+        <img src="images/japan.jpeg" class="image1">
+        <P class="para">Tokyo: Japan's earthquake scientists have warned of the possibility of a coming "megaquake" after eight people were injured Thursday by one of magnitude 7.1 in the south.
+            "The likelihood of a new major earthquake is higher than normal, but this is not an indication that a major earthquake will definitely occur," the Japan Meteorological Agency (JMA) said.
+            
+            It was the first advisory issued under a new system drawn up following a major quake in 2011.
+            
+            Japan's Megaquake Advisory Follows 7.1 Magnitude Tremor
+            This was the first advisory issued under a new system after a major quake in 2011 (representational).
+           <hr>
+           <h1 class="middle-updates1">Kamala Harris Is Barely Competent, Says Donald Trump Ahead Of Debate</h1>
+           <img src="images/am.jpeg" class="image1">
+           <P class="para">Detroit: US Republican presidential candidate Donald Trump and Democratic opponent Kamala Harris will debate on Sept. 10 on ABC, setting up the first face-to-face match-up between the rivals in what polls show is a close race.
+            In a news conference at his Palm Beach, Florida, residence, Trump said he wanted additional debates on Sept. 4 and Sept. 25 that would air on Fox and NBC.
+            
+            Harris said in a post on X that she was looking forward to the Sept. 10 debate after Trump "finally committed."
+            </p>
+            <img src="images/image.png" class="image1">
+            <P class="para">She told reporters after a Detroit-area campaign stop that she was open to discussing more debates, but a campaign official reiterated their position that a Sept. 4 Fox debate is off the table.</P>
+              <h1 class="middle-updates1"><hr>US, Qatar, Egypt Invite Israel And Hamas To Resume Talks On August 15</h1>
+              <img src="images/tank.webp" class="image1"/>
+              <p class="para">US, Qatar, Egypt Invite Israel And Hamas To Resume Talks On August 15
+              More than 37,000 people have been killed since war began between Israel and Hamas.
+              
+              
+              Cairo: Qatari, Egyptian and U.S. leaders called on Israel and Hamas to resume urgent talks on Aug. 15 either in Doha or Cairo to bridge all remaining gaps in the proposed Gaza ceasefire agreement and start implementing it without any delay, the three countries said in a joint statement on Thursday.
+              Listen to the latest songs, only on JioSaavn.com
+              "It is the time to conclude a ceasefire agreement and release hostages and prisoners," the statement added.</P>
+                                
+              <h1 class="middle-updates1"><hr>‘What am I doing?’: Biden appears confused at White House event honoring Texas Rangers; watch video</h1> <img src="images/112394014.webp" class="image1"/>
+            </div>
+        </div>
+        <div>
+        <div class="right-updates">
+          <h1 class="right-updates-top">Israel-Hamas war latest: Israeli military orders another mass evacuation in southern Gaza </h1>
+          <p>Israeli military has ordered another mass evacuation in large areas around Khan Younis in southern Gaza, saying its forces will soon operate there in response to Palestinian rocket fire</p>
+          <img src="images/warrrr.jpg" class="image1"/>
+          <p class="para">gust 8, 2024, amid the ongoing conflict between Israel and the militant group Hamas. | Photo Credit: AFP
+
+            The Israeli military has ordered another mass evacuation in large areas around Khan Younis in southern Gaza, saying its forces will soon operate there in response to Palestinian rocket fire. Gaza’s second-largest city, Khan Younis suffered widespread destruction during air and ground operations earlier this year.
+            
+            Israeli forces have repeatedly returned to heavily destroyed areas of Gaza where they had fought earlier battles against Hamas and other militants since the start of the 10-month-old war.
+            
+          </p>            
+          <h1 class="right-updates-top1">Excise policy case | SC grants bail to Manish Sisodia in both ED and CBI cases</h1>
+          <p class="para">
+            The senior AAP leader and former Deputy Chief Minister will walk out of jail after the top court affirms his ‘right to a speedy trial'
+          </p>
+                 <img src="images/PTI04_06_2024_000085B.jpg" class="image1"/> 
+                 <h1 class="right-updates-top1">Sri Lanka’s Supreme Court suspends controversial visa process involving Indian company</h1> 
+                 <img src="images/sri.jpg" class="image1"/> 
+                 <h1 class="right-updates-top1">Teen planned 'explosives and knives' attack at Swift concert</h1> 
+                 <img src="images/ffff.webp" class="image1"/> 
+                 <p class="para">Austrian security officials say a 19-year-old arrested on Wednesday was planning to kill "a large crowd of people" in a suicide attack at a Taylor Swift concert in Vienna.
+                    Officials say the teen - who had previously pledged allegiance to the Islamic State group (IS) - confessed that he "intended to carry out an attack using explosives and knives".
+                    Swift's three sold-out shows at the Ernst Happel Stadium have been cancelled. More than 195,000 people had been expected to attend.
+                    Local media have also reported that the 19-year-old, the main suspect out of three, had stolen chemicals from his former workplace.</p>
+                    <h1 class="right-updates-top1">Blake Lively: My domestic abuse film is tragic and inspiring</h1> 
+                    <img src="images/bbea.webp" class="image1"/> 
+                    <p class="para">For many young women, there have been very few film adaptations as hotly anticipated as Colleen Hoover's It Ends With Us.
+                        The 2016 book became an internet sensation a few years ago - it took TikTok's #booktok by storm with more than one billion tags and sold 20 million copies weeks as the number one New York Times bestseller.
+                        While on the surface the film appears to be a standard romantic comedy, it comes with a dark twist.</p>
+                </div>
+        </div>
+    </section>
+
+      <footer class="footer">
+        <div class="con">
+               <div class="footer1">
+                <div class="footer-col">
+                  <h4>OUR PRODUCTRS</h4>
+                  <ul>
+                    <li><a href="CONTACT US .HTML">contant us</a></li>
+                    <li><a href="sub.html">Subscribe</a></li>
+                    <li><a href="sun reg.html">Register</a></li>
+                    <li><a href="">News letters</a></li>
+                    <li><a href="">Today’s Edition</a></li>
+                    <li><a href="">Install our app</a></li>
+                  
+
+                  </ul>
+                </div>
+                <div class="footer-col">
+                  <h4>OTHER PUBLICATIONS</h4>
+                  <ul>
+                    <li><a href="">Sun editions</a></li>
+                    <li><a href="">Sun international news</a></li>    
+                    <li><a href="">Sun sports</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=NLelCh0MSNU">Sun live</a></li>
+                    <li><a href="">Sun Standard</a></li>
+                  </ul>
+                </div>
+                <div class="footer-col">
+                  <h4>EXTRA</h4>
+                  <ul>
+                    <li><a href="">Advisor</a></li>
+                    <li><a href="">Puzzles</a></li>
+                    <li><a href="">All topics</a></li>
+                    <li><a href="">Betting offers</a></li>
+                    <li><a href="">Voucher codes</a></li>
+                    <li><a href="">Competitions and offers</a></li>
+                    <li><a href="">Sun adverstiing</a></li>
+                    <li><a href="">Working at the Independent</a></li>
+                  </ul>
+                </div>
+                <div class="footer-col">
+                  <h4>LEGAL</h4>
+                  <ul>
+                    <li><a href="">Code of conduct and complaints</a></li>
+                    <li><a href="">Contributors</a></li>
+                    <li><a href="">Cookie policy</a></li>
+                    <li><a href="">Privacy policy</a></li>
+                    <li><a href="">User policies</a></li>
+                    <li><a href="">Modern slavery Statement</a></li>
+                  
+                  </ul>
+                </div>
+                
+                  <div class="footer-col">
+                    <h4>Follow us</h4>
+                    <div class="links">
+                    <a href="https://www.facebook.com/SunNewsTamil/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/sunpictures/?hl=en"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://twitter.com/sunpictures?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.techzim.co.zw/2019/02/the-sun-is-setting-for-google-google-is-killing-the-project/"><i class="fa-brands fa-google-plus"></i></a>
+                    <a href="https://www.youtube.com/channel/UCIzXayRP7-P0ANpq-nD-h5g"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+              </div>
+               </div>
+              </footer> 
+</body>
+</html>

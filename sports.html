@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        body{
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            background-color: white;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style: none;
+
+        }
+        header{
+            top: 0;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            background-color: black;
+            color: white;
+        }
+        .left-container{  
+            display: flex;
+            justify-content: space-around;
+        }
+        .left-container div{
+            margin: 1rem;
+        }
+        .class-line{
+            display: block;
+            width: 2rem;
+            height: .2rem;
+            background-color: #fff;
+            border-radius: 40px;
+            margin: .3rem;  
+          }
+          .menu-lists ul {
+            display: flex;
+            list-style: none;
+            text-decoration: none;
+            justify-content: space-between;
+          }
+          .menu-lists ul li{
+            margin: 0.5rem;
+          }
+          .cnn{
+            background-color: red;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+          .right-container{
+            display: flex;
+            justify-content: space-between;
+          }
+          .right-container div{
+            margin: 1rem;
+          }
+          .class-top{
+            display: flex;
+            width: 100%;
+            font-size: 0.7rem;
+            margin: 1rem;
+          }
+          .headlines{
+            display: flex;
+            justify-content: space-between;
+           
+            margin: 1rem;
+          }
+          .h-type{
+            color: red;
+          }
+          .updates{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height:500px ;
+        
+          }
+          .updates div{
+            height:500px;
+            width: 400px;
+            margin: 15px;
+          
+          }
+        
+  
+          .left-updates-top{
+            font-weight: bold;
+            font-size: 2rem;
+          }
+          .image1{
+            max-width: 100%;
+
+          }
+          h3{
+            padding-bottom: 15px 0px;
+            color:#e91e63
+          }
+          P{
+            padding: 10px 0px;
+            font-weight: 300;
+          }
+          
+
+          .right-updates-top{
+            font-weight: bold;
+            font-size: 2rem;
+          }
+          .right-updates .para{
+            padding-bottom: 20px;
+             font-weight: bolder;
+             font-size: 1rem;
+        }
+          hr{
+            padding-bottom:5px;
+          }
+        .left-updates .para{
+            padding-bottom: 20px;
+             font-weight: bolder;
+             font-size: 1rem;
+        }
+        .left-updates-top1{
+          padding-top: 50pxpx;
+        }
+        .left-updates3 p{
+            color: grey;
+             
+        }
+        .middle-updates1{
+          padding-top:70pxpx ;
+        }
+  
+        .middle-updates-top{
+            font-weight: bold;
+            font-size: 2rem;
+          }
+        .middle-updates .para{
+          padding-bottom:  20px ;
+            font-weight: bolder;
+            font-size: 1rem;
+        }
+        .middle-updates-more1 p{
+            color: gray;
+        }
+        .
+        .con{
+          max-width: 1170px;
+        
+          margin: auto;
+        }
+        .footer1{
+          display: flex;
+          flex-wrap: wrap;
+        }
+        ul{
+          list-style: none;
+        }
+      .footer{
+        background-color: rgb(3, 3, 3);
+       
+        padding: 40px 0;
+        position:relative;
+        right: 0;
+        left: 0;
+        bottom: -165rem;
+      }
+ .footer-col{
+  width: 25%;
+  padding: 0 15px;
+
+ }
+ .footer-col h4{
+  font-size: 18px;
+  color: #fff;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+  font-weight: 500;
+  position: relative;
+ }
+ .footer-col h4::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #e91e63;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+ }
+ .footer-col ul li:not(:last-child){
+  margin-bottom: 10px;
+ }
+ .footer-col ul li a{font-size: 16px;
+  text-transform: capitalize;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 300;
+  color:#bbbb;
+  display: block;
+ 
+
+ }
+ .footer-col ul li a:hover{
+  color:#fff;
+  padding-left:10px;
+ }
+ .footer-col .links a{
+        display: inline-block;
+        height: 40px;
+        width: 40px;
+        background-color: rgba(70, 68, 68, 0.993);
+        margin: 0 10px 10px 0;
+        text-align: center;
+        line-height: 40px;
+        border-radius: 50%;
+        color: #fff;
+ }
+ @media(max-width: 767px){
+
+ }
+    </style>
+</head>
+<body>
+    <header >
+      <div class="left-container">
+            <label>
+                <span class="class-line"></span>
+                <span class="class-line"></span>
+                <span class="class-line"></span>
+            </label>
+            <div class="menu-lists">
+                <ul>
+                    <li class="cnn">SUN NEWS</li>
+                    <li><a href="world.html">world</a></li>
+                    <li><a href="politics.html">politics</a></li>
+
+                    <li><a href="entertainment.html">Entertainment</a></li>
+                </ul>
+            </div>
+        </div>
+    <!--  <div class="right-container">
+            <div class="audio">Audio</div>
+                <div class="search">Search</div>
+                <div class="log-in">Log in</div>
+      
+        </div> -->
+
+    </header>
+    <section class="class-top">
+        <div class="headlines">
+            <h1 class="h-type">PODCAST:</h1>
+            <h1 class="h-title">Sports</h1>
+        </div>
+        <div class="headlines">
+            <h1 class="h-type">: OLYMPICS:</h1>
+            <h1 class="h-title">In photos | Games </h1>
+        </div>
+        <div class="headlines">
+            <h1 class="h-type">TRENDING:</h1>
+            <h1 class="h-title">Politicis|</h1>
+            <h1 class="h-title">
+                Vinesh Phogat</h1>
+        </div>
+    </section> 
+
+     <section class="updates">
+      <div>
+        <div class="left-updates">
+            <h1 class="left-updates-top">Paris Olympics 2024 Day 13 Live Updates: India 0-0 Spain in men's hockey bronze medal match, wrestler Aman enters semis</h1>
+            <img src="images/112362921.webp" class="image1"/>
+            <p class="para"> Paris Olympics 2024 Day 13 Live Updates: Defending champion Neeraj Chopra aims to make history once again at the Paris Olympics as he competes in the men's javelin throw final on Thursday. If he secures a gold medal, or any medal, he will become the most decorated track and field athlete in India's sporting history and the best in terms of individual Olympic sports.
+
+                Indian men's hockey team will also aim for a second consecutive podium finish at the Olympics when it takes on Spain in the bronze medal match.</p>
+    
+  
+                     <h1 class="left-updates-top1"><hr>
+                        
+Paris Olympics 2024, Day 13: Catch all the action from the Summer Games through these images</h1>
+                     <p class="p">Neeraj Chopra won silver as an Olympic record throw from Arshad Nadeem kept him away from a 2nd gold, while the Indian hockey team won their 2nd medal in a row</p>
+                     <img src="images/bbb1.webp" class="image1"/>
+                     <p class="para">Two medals came for India on a rather historic Day 13. Neeraj Chopra's men's javelin final was one of the most awaited events of the Games for the country. Neeraj managed to throw well over the mark he achieved at the Tokyo Olympics but an Olympic record throw from Pakistan's Arshad Nadeem denied the Indian a second consecutive gold medal. Meanwhile, the Indian men's hockey team won a second consecutive Olympic medal for the first time since 1972.  (PTI)</p>
+                     <img src="images/bbb2.avif" class="image1"/>
+                     <p class="para">Aman Sehrawat scythed through his first two bouts in the men's 57kg wrestling, winning them by technical superiority. However, he then lost his semifinal bout by technical superiority later in the day and will now fight for bronze on Friday. (HT_PRINT)</p>
+                      <img src="images/bbb3.jpg" class="image1"/>
+                     <p class="para">Anshu Malik, though, lost in her first bout of the women's 57kg. Her opponent Helen Maroulis went on to lose the semi-final and Anshu was thus ruled out of the repechage rounds for the bronze medal. (PTI)
+                      <img src="images/bbb4.avif" class="image1"/>
+                     <p class="para">The Indian men's hockey team managed to grind out a 2-1 result and thus won bronze. They had won bronze at the 2020 Tokyo Olympics as well and this is the first time since 1972 that India have managed to win a second consecutive Games medal in hockey. (HT_PRINT)</p>
+                      <img src="images/bbb5.avif" class="image1"/>
+                     <p class="para">It made for a fitting send-off for legendary goalkeeper PR Sreejesh, who had announced that he would retire after the Olympics. Sreejesh's career started around the time that India had failed to qualify for the Beijing Olympics. He now ends his career with two consecutive Olympic medals. (REUTERS)</p>
+
+
+                    </div>
+      </div>
+        <div>
+        <div class="middle-updates">
+        <h1 class="middle-updates-top">Arshad Nadeem beats Neeraj Chopra with Olympic record-breaking throw to clinch gold: Men's javelin throw final in images</h1>        
+        <P class="para">Paris Olympics 2024: It was a tight contest as Arshad Nadeem defeated Neeraj Chopra with a record-breaking throw to clinch gold.
+        </p>
+        <img src="images/aaa.avif" class="image1">
+        
+            <P class="para">Paris Olympics 2024: The men's javelin throw final took place on Thursday, and Arshad Nadeem scripted history as he registered an Olympic record of 92.97m to clinch gold. Meanwhile, India's Neeraj Chopra got silver and Grenada's Anderson Peters got bronze.(REUTERS) </p>
+              <img src="images/aaa1.webp" class="image1">
+              <P class="para">Paris Olympics 2024: Nadeem began with a first attempt of 91.79m, and then threw 92.97m which got him gold. In his sixth attempt, he reached 91.79m.(AP)
+              </P>
+              <img src="images/aaa2.webp" class="image1">
+              <P class="para">Paris Olympics 2024: Neeraj, who was also the defending champion, got a best throw of 89.45m, which he managed in his second attempt. He got four consecutive four throws. His first and third were invalidated by red flags.(AP)</P>
+              <img src="images/aaa3.webp" class="image1">
+              <P class="para">Paris Olympics 2024: After bagging silver, Neeraj congratulated his friend Nadeem, and revealed that it was his first-ever defeat to the Pakistani ace in the last eight years.(PTI)</P>
+                <img src="images/aaa4.webp" class="image1">
+              <P class="para">Paris Olympics 2024: The pair are known to be good friends and have been competing against each other for a long time.(PTI)</P>
+                <img src="images/aaa5.webp" class="image1">
+              <P class="para">Paris Olympics 2024: The venue was also packed with Indian and Pakistani fans, who were there to witness the men's javelin throw final.(PTI)</P>
+
+
+
+
+
+
+
+
+            <h1 class="middle-updates1"><hr>Olympic Boxing: Nishant Dev's coach plays down claims of unfair judging in QF exit</h1>
+            <p class="para">  Nishant Dev's coach Surinder Kumar downplayed any claims of unfair judgement after the Indain boxer's exit from the quarter-final round at the Paris Olympics 2024.  </p>
+            <img src="images/nishant-dev-042638707-16x9_0.webp" class="image1"/>
+              <p class="para">Nishant Dev's coach Surinder Kumar downplayed the claims of any unfair judgement during the quarter-final match at the Paris Olympics 2024. Indian boxer Nishant suffered a narrow split-decision loss against Mexico's Marco Verde Alvarez in the 71kg category on August 3, Saturday. The 23-year-old who was making his Olympic debut lost the quarter-final bout and was just one win away from assuring India another medal at the Paris Games. However, Nishant's loss did not sit well with a certain section of users on social media as they claimed the umpiring was unfair and that India was "robbed-off" a medal.</p>
+                
+            <!-- <h1 class="middle-updates1"><hr>Bangladesh crisis LIVE Updates: Muhammad Yunus to return to Bangladesh on August 8; Indian High Commission in Dhaka remains functional</h1>
+              <img src="images/" class="image1"/>
+              <p class="para">Air India and IndiGo operated special flights to Dhaka, bringing more than 400 people amid a volatile situation in the Bangladesh capital. A special Air India flight brought 205 people, including 6 infants, from Dhaka to New Delhi on Wednesday (August 7, 2024), an official said.
+
+                Bangladesh President Mohammed Shahabuddin dissolved Parliament on Tuesday and appointed Nobel laureate Mohammad Yunus as the head of an interim government, a day after Prime Minister Sheikh Hasina abruptly resigned and fled the country following weeks of violent protests.</p>-->
+              </div>
+        </div> 
+        <div>
+        <div class="right-updates">
+          <h1 class="right-updates-top">  Vinesh Phogat CAS Hearing LIVE Updates: Indian wrestler's plea against Olympic disqualification accepted, verdict today </h1>
+          <img src="images/v1.webp" class="image1"/>
+          <p class="para">Vinesh Phogat news LIVE: The Court of Arbitration for Sports will hear ace Indian wrestlerVinesh Phogat's plea against her disqualification at the Paris Olympics today, Friday. In her appeal, Phogat also requested a joint silver as she was found overweight after she won the semi-final in Paris. 
+
+            In a major development in Vinesh Phogat's court hearing against her Olympics disqualification, senior advocate Haris Salve, on Thursday, agreed to represent Phogat at the Court of Arbitration for Sports. The Indian contingent is trying its best to secure the best legal representation for Phogat for the hearing, scheduled at 9:00 AM Paris time (12:30 PM IST), reported ANI.</p>
+            <h3>Vinesh Phogat CAS Hearing Live:  Phogat plea accepted, hearing today </h3>
+<p>Vinesh Phogat CAS Hearing Live: Vinesh Phogat's plea against her disqualification from wrestling event at Paris Olympics has been accepted by the CAS and the hearing will begin today at 12:30 pm (IST).</p>
+<h3>Vinesh Phogat CAS Hearing Live: Congress demands withdrawal of Mansukh Mandaviya's statement on Phogat</h3>
+<p>Vinesh Phogat CAS Hearing Live: Congress Party have given an adjournment motion notice in the Lok Sabha on Friday and have demanded the withdrawal of the statement of Union Sports Minister Minister Mansukh Mandivya on Vinesh Phogat's disqualification issue.</p>
+
+Congress MP Manickam Tagore gave the adjournment motion notice regarding the statement of Mandivya in which the sports minister said that "Rs. 70.45575 lakhs has been spent on her as a deflection."</p>
+
+"The recent disqualification of Vinesh Phogat due to a minor weight discrepancy has devastated not only her Olympic dreams but also every Indian. It is disheartening to see the Sports Minister, Mansukh Mandaviya, use the Rs. 70.45575 lakhs spent on her as a deflection. This amount is not an asset of the BJP; Phogat is a national asset," the Congress MP said in his letter.</p>
+<h3>Vinesh Phogat CAS Hearing Live: About Phogat's hearing against Olympics disqualification</h3>
+<p>Vinesh Phogat CAS Hearing Live: The matter will be heard by an ad-hoc committee led by President Michael Lenard from the US. The division has been established on an ad hoc basis in Paris to handle cases during the Olympics. This division is located within the Paris judicial court in the 17th arrondissement.</p>
+<h3>Vinesh Phogat CAS Hearing Live: Senior advocate Harish Salve to represent IOA in the hearing </h3>
+<p>Vinesh Phogat CAS Hearing Live: Senior advocate Harish Salve will represent Indian Olympic Association (IOA) in the Court of Arbitration for Sports (CAS) hearing on Friday. The CAS will hear the case, appealed by Vinesh Phogat against her Olympics disqualification.</p>
+<h3>Vinesh Phogat news LIVE: Vinesh Phogat announced her retirement after Paris Olympics disqualification</h3>
+<p>Vinesh Phogat news LIVE: Ace wrestler announced her retirement after she was disqualified from the event at the Paris Olympics after she was found overweight by 100 grams after winning semi finals.</p>
+<h3>Vinesh Phogat news LIVE: When will CAS hearing against Phogat's Olympics disqualification begin?</h3>
+<p>Vinesh Phogat news LIVE: According to an ANI report, the ad hoc hearing at CAS is scheduled to start at 9:00 AM Paris time (12:30 PM IST).</p>
+<h3>Vinesh Phogat news LIVE: CAS to hear ace wrestler's plea against Olympics disqualification today</h3>
+<p>Vinesh Phogat news LIVE: The Court of Arbitration for Sports will hear Vinesh Phogat's appeal against her Paris Olympics disqualification today.</p>
+
+
+
+<p class="para">Vinesh Phogat CAS Hearing Live Updates: The Court of Arbitration for Sports (CAS) will hear wrestler Vinesh Phogat's plea against her disqualification at Paris Olympics 2024 on Friday. She has also requested for a joint silver</p>
+                 <img src="images/vvvv.webp" class="image1"/> 
+                   <p class="para">TVinesh Phogat CAS Hearing Live Updates: The ace Indian wrestler had appealed against her Paris Olympics 2024 disqualification. (HT)</p>
+                   <img src="images/v2.webp" class="image1"/>
+                  </div>
+        </div>
+    </section>
+
+      <footer class="footer">
+        <div class="con">
+               <div class="footer1">
+                <div class="footer-col">
+                  <h4>OUR PRODUCTRS</h4>
+                  <ul>
+                    <li><a href="CONTACT US .HTML">contant us</a></li>
+                    <li><a href="sub.html">Subscribe</a></li>
+                    <li><a href="sun reg.html">Register</a></li>
+                    <li><a href="">News letters</a></li>
+                    <li><a href="">Today’s Edition</a></li>
+                    <li><a href="">Install our app</a></li>
+                  
+
+                  </ul>
+                </div>
+                <div class="footer-col">
+                  <h4>OTHER PUBLICATIONS</h4>
+                  <ul>
+                    <li><a href="">Sun editions</a></li>
+                    <li><a href="">Sun international news</a></li>    
+                    <li><a href="">Sun sports</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=NLelCh0MSNU">Sun live</a></li>
+                    <li><a href="">Sun Standard</a></li>
+                  </ul>
+                </div>
+                <div class="footer-col">
+                  <h4>EXTRA</h4>
+                  <ul>
+                    <li><a href="">Advisor</a></li>
+                    <li><a href="">Puzzles</a></li>
+                    <li><a href="">All topics</a></li>
+                    <li><a href="">Betting offers</a></li>
+                    <li><a href="">Voucher codes</a></li>
+                    <li><a href="">Competitions and offers</a></li>
+                    <li><a href="">Sun adverstiing</a></li>
+                    <li><a href="">Working at the Independent</a></li>
+                  </ul>
+                </div>
+                <div class="footer-col">
+                  <h4>LEGAL</h4>
+                  <ul>
+                    <li><a href="">Code of conduct and complaints</a></li>
+                    <li><a href="">Contributors</a></li>
+                    <li><a href="">Cookie policy</a></li>
+                    <li><a href="">Privacy policy</a></li>
+                    <li><a href="">User policies</a></li>
+                    <li><a href="">Modern slavery Statement</a></li>
+                  
+                  </ul>
+                </div>
+                
+                  <div class="footer-col">
+                    <h4>Follow us</h4>
+                    <div class="links">
+                    <a href="https://www.facebook.com/SunNewsTamil/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/sunpictures/?hl=en"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://twitter.com/sunpictures?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.techzim.co.zw/2019/02/the-sun-is-setting-for-google-google-is-killing-the-project/"><i class="fa-brands fa-google-plus"></i></a>
+                    <a href="https://www.youtube.com/channel/UCIzXayRP7-P0ANpq-nD-h5g"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+              </div>
+               </div>
+              </footer> 
+</body>
+</html>

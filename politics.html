@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        body{
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            background-color: white;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style: none;
+
+        }
+        header{
+            top: 0;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            background-color: black;
+            color: white;
+        }
+        .left-container{  
+            display: flex;
+            justify-content: space-around;
+        }
+        .left-container div{
+            margin: 1rem;
+        }
+        .class-line{
+            display: block;
+            width: 2rem;
+            height: .2rem;
+            background-color: #fff;
+            border-radius: 40px;
+            margin: .3rem;  
+          }
+          .menu-lists ul {
+            display: flex;
+            list-style: none;
+            text-decoration: none;
+            justify-content: space-between;
+          }
+          .menu-lists ul li{
+            margin: 0.5rem;
+          }
+          .cnn{
+            background-color: red;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+          .right-container{
+            display: flex;
+            justify-content: space-between;
+          }
+          .right-container div{
+            margin: 1rem;
+          }
+          .class-top{
+            display: flex;
+            width: 100%;
+            font-size: 0.7rem;
+            margin: 1rem;
+          }
+          .headlines{
+            display: flex;
+            justify-content: space-between;
+           
+            margin: 1rem;
+          }
+          .h-type{
+            color: red;
+          }
+          .updates{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height:500px ;
+        
+          }
+          .updates div{
+            height:500px;
+            width: 400px;
+            margin: 15px;
+          
+          }
+        
+  
+          .left-updates-top{
+            font-weight: bold;
+            font-size: 2rem;
+          }
+          .image1{
+            max-width: 100%;
+
+          }
+          h3{
+            padding-bottom: 15px 0px;
+            color:#e91e63
+          }
+          P{
+            padding: 10px 0px;
+            font-weight: 300;
+          }
+          
+
+          .right-updates-top{
+            font-weight: bold;
+            font-size: 2rem;
+          }
+          .right-updates .para{
+            padding-bottom: 20px;
+             font-weight: bolder;
+             font-size: 1rem;
+        }
+          hr{
+            padding-bottom:5px;
+          }
+        .left-updates .para{
+            padding-bottom: 20px;
+             font-weight: bolder;
+             font-size: 1rem;
+        }
+        .left-updates-top1{
+          padding-top: 50pxpx;
+        }
+        .left-updates3 p{
+            color: grey;
+             
+        }
+        .middle-updates1{
+          padding-top:70pxpx ;
+        }
+  
+        .middle-updates-top{
+            font-weight: bold;
+            font-size: 2rem;
+          }
+          .right-updates-top1{
+            padding:20px 0;
+          }
+        .middle-updates .para{
+          padding-bottom:  20px ;
+            font-weight: bolder;
+            font-size: 1rem;
+        }
+        .middle-updates-more1 p{
+            color: gray;
+        }
+        .
+        .con{
+          max-width: 1170px;
+        
+          margin: auto;
+        }
+        .footer1{
+          display: flex;
+          flex-wrap: wrap;
+        }
+        ul{
+          list-style: none;
+        }
+      .footer{
+        background-color: rgb(3, 3, 3);
+       
+        padding: 40px 0;
+        position:relative;
+        right: 0;
+        left: 0;
+        bottom: -155rem;
+      }
+ .footer-col{
+  width: 25%;
+  padding: 0 15px;
+
+ }
+ .footer-col h4{
+  font-size: 18px;
+  color: #fff;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+  font-weight: 500;
+  position: relative;
+ }
+ .footer-col h4::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #e91e63;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+ }
+ .footer-col ul li:not(:last-child){
+  margin-bottom: 10px;
+ }
+ .footer-col ul li a{font-size: 16px;
+  text-transform: capitalize;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 300;
+  color:#bbbb;
+  display: block;
+ 
+
+ }
+ .footer-col ul li a:hover{
+  color:#fff;
+  padding-left:10px;
+ }
+ .footer-col .links a{
+        display: inline-block;
+        height: 40px;
+        width: 40px;
+        background-color: rgba(70, 68, 68, 0.993);
+        margin: 0 10px 10px 0;
+        text-align: center;
+        line-height: 40px;
+        border-radius: 50%;
+        color: #fff;
+ }
+ @media(max-width: 767px){
+
+ }
+    </style>
+</head>
+<body>
+    <header >
+      <div class="left-container">
+            <label>
+                <span class="class-line"></span>
+                <span class="class-line"></span>
+                <span class="class-line"></span>
+            </label>
+            <div class="menu-lists">
+                <ul>
+                    <li class="cnn">SUN NEWS</li>
+                    <li><a href="world.html">world</a></li>
+                    <li><a href="politics.html">politics</a></li>
+                    <li><a href="sports.html">Sports</a></li>
+                    <li><a href="entertainment.html">Entertainment</a></li>
+                </ul>
+            </div>
+        </div>
+    <!--  <div class="right-container">
+            <div class="audio">Audio</div>
+                <div class="search">Search</div>
+                <div class="log-in">Log in</div>
+      
+        </div> -->
+
+    </header>
+    <section class="class-top">
+        <div class="headlines">
+            <h1 class="h-type">TODAY UPDATES
+            <h1 class="h-title">:POLITICS</h1>
+        </div>
+        <div class="headlines">
+            <h1 class="h-type">BJP CONVERSATION:</h1>
+            <h1 class="h-title">In photos | Information </h1>
+        </div>
+        <div class="headlines">
+           
+            <h1 class="h-type">HEADLINES</h1>
+           
+        </div>
+    </section> 
+
+     <section class="updates">
+      <div>
+        <div class="left-updates">
+            <h1 class="left-updates-top">
+                DMK never professed atheism, anybody is free to worship gods of their choice: TN minister P K Sekar Babu</h1>
+                 <img src="images/tamil-nadu-cm-and-dmk-leader-mk-stalin-along-with-party-leaders.webp" class="image1"/>
+            <p class="para"> CHENNAI: The DMK never professed atheism nor interfered in devotees' faith and anybody was free to worship the gods of their choice, Tamil Nadu Minister P K Sekar Babu said, slamming the BJP for raising a new strategy to target the ruling party. The DMK always gave full freedom to people of all faiths to worship and never interfered, he said, strongly reacting to BJP state chief K Annamalai's recent accusation that the DMK was forced to reverse its previous stance on atheism owing to the BJP's activities in Tamil Nadu.
+<br><br>
+                "Whether it is Muslims, Christians, Buddhists or Hindus, the DMK gave full freedom to them to worship the gods of their choice.... we never interfered in the devotees' belief," Babu, who holds the Hindu Religious and Charitable Endowments portfolio, told reporters here on Thursday.
+                <br><br>
+                "The DMK is not a divisive force. You can chant any god's name like Jai Shree Ram, Harohara Muruga, Venkatachalapathy, Govinda, Govinda, anything is acceptable," the minister said.</p>
+  
+                     <h1 class="left-updates-top1"><hr>
+                        
+                        18% GST on health insurance: FM Sitharaman addresses issue in the Lok sabha</h1>
+                     <p class="p">Union Finance Minister Nirmala Sitharaman on Wednesday addressed the issue of 18 per cent Goods and Services Tax (GST) on health insurance. Sithraman was replying to the opposition bloc in Lok Sabha who cited Union Minister Nitin Gadkari's letter to demand removal of GST on health and life insurance.
+                     </p>
+                    <img src="images/Nirmala_Sitharaman_18_pc_gst_medical_health_insura_1723078806080_1723078806244.webp" class="image1"/>
+                    <p class="para">Sitharaman said, "I want to raise two important points - tax has been there on medical insurance even before the introduction of GST. There was already a pre-GST tax on medical insurance, before the GST was introduced. This is not a new issue, it was already there in all the states. Those protesting here... did they discuss regarding the removal of this tax in their states?"
+
+                        Nitin Gadkari had urged the finance minister to withdraw the Goods and Services Tax on premiums paid for life and m ..
+                        
+                      </p>
+                        
+                     <h1 class="left-updates-top1"><hr>'Will PM answer for Sisodia's lost time': AAP-BJP spar over SC bail verdict
+                        </h1>
+                        <p class="p">Delhi liquor policy case on Friday, his party hailed the verdict while strongly criticising the ruling Bharatiya Janata Party for engaging in “vendetta politics”.
+                            The top court, which began hearing Sisodia’s two pleas in the case on Monday, set aside Delhi High Court’s May order dismissing his bail petitions. 
+                          <br><br>  ALSO READ: 'Victory of truth', says AAP after SC grants bail to Manish Sisodia</p>
+                        <img src="images/p1.avif" class="image1"/>
+                        <h1 class="left-updates-top1"><hr>BJP-JD(S) 'Mysuru Chalo' march seeking CM's resignation continues on day 7
+                        </h1>
+                        <p class="p">The week-long Bengaluru-Mysuru padayatre (foot march) has sought to highlight the alleged fraudulent allotment of sites to land losers by MUDA</p>
+                        <img src="images/p2.avif" class="image1"/>
+                        <h1 class="left-updates-top1"><hr>DMK never professed atheism, people free to worship as they choose: TN Min
+                        </h1>
+                        <p class="p">The DMK always gave full freedom to people of all faiths to worship and never interfered, he said, strongly reacting to BJP state chief K Annamalai's recent accusation</p>
+                        <img src="images/p3.avif" class="image1"/>
+
+
+                    </div>
+      </div>
+        <div>
+        <div class="middle-updates">
+        <h1 class="middle-updates-top">Govt to table banking laws bill in LS, seeks to raise nominees per a/c to 4</h1>
+        <img src="images/p4.avif" class="image1">
+        <P class="para">As the Parliament convenes for the ongoing Budget Session on Friday, Union Finance Minister Nirmala Sitharaman will introduce new Bills including the Banking Laws (Amendment) Bill, 2024 to amend the Reserve Bank of India Act, the Banking Regulation Act and the State Bank of India Act among others in the Lok Sabha on Friday.  <br><br>
+            The finance minister will also introduce Bills to amend the Banking Companies (Acquisition and Transfer of Undertakings) Act, of 1970, and the Banking Companies (Acquisition and Transfer of Undertakings) Act, of 1980.  <br><br>
+            Click here to connect with us on WhatsApp
+            According to the revised list of business for Lok Sabha, Union Minister of Ports, Shipping and Waterways, Sarbananda Sonowal will introduce a Bill to provide for the responsibilities, liabilities, rights, and immunities attached to carriers concerning the carriage of goods by sea and for matters connected therewith or related thereto.  <br><br>
+            He will also introduce a Bill to make provisions for the transfer of rights of suit and all liabilities to the consignee named in a bill of lading and every endorsee of a bill of lading, to whom the property in the goods mentioned in the bill of lading shall pass, upon or because of a consignment or an endorsement, and for matters connected therewith or related thereto.  <br><br>
+            Union Railway Minister Ashwini Vaishnaw will introduce a Bill to move for leave to introduce a Bill further to amend the Railways Act, of 1989.
+            Further, Union Minister for Civil Aviation, Rammohan Naidu Kinjarapu will introduce a Bill to provide for regulation and control of the design, manufacture, maintenance, possession, use, operation, sale, export, and import of aircraft and for matters connected therewith or incidental thereto be taken into consideration.  <br><br>
+            Union Minister Arjun Ram Meghwal will move the Bill for enabling the reservation of seats in accordance with article 332 of the Constitution for effective democratic participation of members of Scheduled Tribes and to provide for the readjustment of seats in the Legislative Assembly of the State of Goa, in so far as such readjustment is necessitated by the inclusion of certain communities in the list of the Scheduled Tribes in the State of Goa and for matters connected therewith or incidental thereto be taken into consideration. </p><hr>
+           
+                <h1 class="left-updates-top1"><hr>Former West Bengal CM Buddhadeb's mortal remains to embark on final journey
+                </h1>
+                <p class="para">West Bengal chief minister Buddhadeb Bhattacharjee, who died at his south Kolkata residence on Thursday morning after suffering from prolonged illness related to respiratory issues </p>
+                    <img src="images/p5.avif" class="image1"/>
+    
+
+                    <h1 class="left-updates-top1"><hr>Ladakh council's representation, decision-making powers retained: Govt
+                    </h1>
+                    <p class="para"> The minister said LAHDCs exercise executive powers over various subjects within their respective districts</p>
+                        <img src="images/p6.avif" class="image1"/>
+        
+
+                        <h1 class="left-updates-top1"><hr>Cong seeks withdrawal of Mandaviya's remark on Phogat's disqualification
+                        </h1>
+                        <p class="para"> Congress MP Manickam Tagore gave the adjournment motion notice regarding the statement of Union Sports Minister Mansukh Mandivya</p>
+                            <img src="images/p7.webp" class="image1"/>
+            
+            
+
+
+
+
+
+
+
+            <!-- <h1 class="middle-updates1"><hr>Bangladesh crisis LIVE Updates: Muhammad Yunus to return to Bangladesh on August 8; Indian High Commission in Dhaka remains functional</h1>
+              <img src="images/" class="image1"/>
+              <p class="para">Air India and IndiGo operated special flights to Dhaka, bringing more than 400 people amid a volatile situation in the Bangladesh capital. A special Air India flight brought 205 people, including 6 infants, from Dhaka to New Delhi on Wednesday (August 7, 2024), an official said.
+
+                Bangladesh President Mohammed Shahabuddin dissolved Parliament on Tuesday and appointed Nobel laureate Mohammad Yunus as the head of an interim government, a day after Prime Minister Sheikh Hasina abruptly resigned and fled the country following weeks of violent protests.</p>-->
+              </div>
+        </div> 
+        <div>
+        <div class="right-updates">
+          <h1 class="right-updates-top"> ' A little pressure and he takes U-turn, we don't need him': Rahul Gandhi takes dig at Nitish Kumar</h1>
+            <img src="images/p8.webp" class="image1"/>
+            <h1 class="right-updates-top1">NCP row: Sharad faction can use 'NCP-Sharadchandra Pawar' name till further orders, SC says</h1>
+            <img src="images/p9.webp" class="image1"/>
+            <h1 class="right-updates-top1">Congress vs regional parties in INDIA bloc: Nitish Kumar becomes first leader to walk out of opposition alliance</h1>
+            <img src="images/p10.webp" class="image1"/>
+            <h1 class="right-updates-top1">'Thank you Tejashwi': RJD puts out ads in Bihar newspapers amid ongoing political crisis</h1>
+            <img src="images/p11.webp" class="image1"/>
+
+            <h1 class="right-updates-top1">Nitish's imminent exit, Congress-TMC deadlock leave INDIA gasping</h1>
+            <img src="images/p12.webp" class="image1"/>
+
+            <h1 class="right-updates-top1">Congress puts seat talks with allies on fast track</h1>
+            <img src="images/p13.webp" class="image1"/>
+
+            <h1 class="right-updates-top1">
+                Ram Mandir inauguration: Congress leader Sam Pitroda says 'don't mix religion with politics'; BJP accuses grand old party of appeasement politics</h1>
+            <img src="images/p14.webp" class="image1"/>
+
+
+
+
+                  </div>
+        </div>
+    </section>
+
+      <footer class="footer">
+        <div class="con">
+               <div class="footer1">
+                <div class="footer-col">
+                  <h4>OUR PRODUCTRS</h4>
+                  <ul>
+                    <li><a href="CONTACT US .HTML">contant us</a></li>
+                    <li><a href="sub.html">Subscribe</a></li>
+                    <li><a href="sun reg.html">Register</a></li>
+                    <li><a href="">News letters</a></li>
+                    <li><a href="">Today’s Edition</a></li>
+                    <li><a href="">Install our app</a></li>
+                  
+
+                  </ul>
+                </div>
+                <div class="footer-col">
+                  <h4>OTHER PUBLICATIONS</h4>
+                  <ul>
+                    <li><a href="">Sun editions</a></li>
+                    <li><a href="">Sun international news</a></li>    
+                    <li><a href="">Sun sports</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=NLelCh0MSNU">Sun live</a></li>
+                    <li><a href="">Sun Standard</a></li>
+                  </ul>
+                </div>
+                <div class="footer-col">
+                  <h4>EXTRA</h4>
+                  <ul>
+                    <li><a href="">Advisor</a></li>
+                    <li><a href="">Puzzles</a></li>
+                    <li><a href="">All topics</a></li>
+                    <li><a href="">Betting offers</a></li>
+                    <li><a href="">Voucher codes</a></li>
+                    <li><a href="">Competitions and offers</a></li>
+                    <li><a href="">Sun adverstiing</a></li>
+                    <li><a href="">Working at the Independent</a></li>
+                  </ul>
+                </div>
+                <div class="footer-col">
+                  <h4>LEGAL</h4>
+                  <ul>
+                    <li><a href="">Code of conduct and complaints</a></li>
+                    <li><a href="">Contributors</a></li>
+                    <li><a href="">Cookie policy</a></li>
+                    <li><a href="">Privacy policy</a></li>
+                    <li><a href="">User policies</a></li>
+                    <li><a href="">Modern slavery Statement</a></li>
+                  
+                  </ul>
+                </div>
+                
+                  <div class="footer-col">
+                    <h4>Follow us</h4>
+                    <div class="links">
+                    <a href="https://www.facebook.com/SunNewsTamil/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/sunpictures/?hl=en"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://twitter.com/sunpictures?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.techzim.co.zw/2019/02/the-sun-is-setting-for-google-google-is-killing-the-project/"><i class="fa-brands fa-google-plus"></i></a>
+                    <a href="https://www.youtube.com/channel/UCIzXayRP7-P0ANpq-nD-h5g"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+              </div>
+               </div>
+              </footer> 
+</body>
+</html>

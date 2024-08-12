@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        body{
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            background-color: white;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style: none;
+
+        }
+        header{
+            top: 0;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            background-color: black;
+            color: white;
+        }
+        .left-container{  
+            display: flex;
+            justify-content: space-around;
+        }
+        .left-container div{
+            margin: 1rem;
+        }
+        .class-line{
+            display: block;
+            width: 2rem;
+            height: .2rem;
+            background-color: #fff;
+            border-radius: 40px;
+            margin: .3rem;  
+          }
+          .menu-lists ul {
+            display: flex;
+            list-style: none;
+            text-decoration: none;
+            justify-content: space-between;
+          }
+          .menu-lists ul li{
+            margin: 0.5rem;
+          }
+          .sun{
+            background-color: red;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+          .right-container{
+            display: flex;
+            justify-content: space-between;
+          }
+          .right-container div{
+            margin: 1rem;
+          }
+          .class-top{
+            display: flex;
+            width: 100%;
+            font-size: 0.7rem;
+            margin: 1rem;
+          }
+          .headlines{
+            display: flex;
+            justify-content: space-between;
+            margin: 1rem;
+          }
+          .h-type{
+            color: red;
+          }
+          .updates{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height:500px ;
+        
+          }
+          .updates div{
+            height:500px;
+            width: 400px;
+            margin: 15px;
+          
+          }
+        
+  
+          .left-updates-top{
+            font-weight: bold;
+            font-size: 2rem;
+          }
+          .image1{
+            max-width: 100%;
+
+          }
+      
+          
+
+          .right-updates-top{
+            font-weight: bold;
+            font-size: 2rem;
+          }
+          .right-updates .para{
+            padding-bottom: 20px;
+             font-weight: bolder;
+             font-size: 1rem;
+        }
+          hr{
+            padding-bottom:5px;
+          }
+        .left-updates .para{
+            padding-bottom: 20px;
+             font-weight: bolder;
+             font-size: 1rem;
+        }
+        .left-updates-top1{
+          padding-top: 50px;
+        }
+        .left-updates3 p{
+            color: grey;
+             
+        }
+        .middle-updates1{
+          padding-top:10px ;
+        }
+  
+        .middle-updates-top{
+            font-weight: bold;
+            font-size: 2rem;
+          }
+        .middle-updates .para{
+          padding-bottom:  20px ;
+            font-weight: bolder;
+            font-size: 1rem;
+        }
+        .middle-updates-more1 p{
+            color: gray;
+        }
+        
+        .con{
+          max-width: 1170px;
+        
+          margin: auto;
+        }
+        .footer1{
+          display: flex;
+          flex-wrap: wrap;
+        }
+        ul{
+          list-style: none;
+        }
+      .footer{
+        background-color: rgb(3, 3, 3);
+       
+        padding: 40px 0;
+        position:relative;
+        right: 0;
+        left: 0;
+        bottom: -125rem;
+      }
+ .footer-col{
+  width: 25%;
+  padding: 0 15px;
+
+ }
+ .footer-col h4{
+  font-size: 18px;
+  color: #fff;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+  font-weight: 500;
+  position: relative;
+ }
+ .footer-col h4::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #e91e63;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+ }
+ .footer-col ul li:not(:last-child){
+  margin-bottom: 10px;
+ }
+ .footer-col ul li a{font-size: 16px;
+  text-transform: capitalize;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 300;
+  color:#bbbb;
+  display: block;
+ 
+
+ }
+ .footer-col ul li a:hover{
+  color:#fff;
+  padding-left:10px;
+ }
+ .footer-col .links a{
+        display: inline-block;
+        height: 40px;
+        width: 40px;
+        background-color: rgba(70, 68, 68, 0.993);
+        margin: 0 10px 10px 0;
+        text-align: center;
+        line-height: 40px;
+        border-radius: 50%;
+        color: #fff;
+ }
+ @media(max-width: 767px){
+
+ }
+    </style>
+</head>
+<body>
+    <header >
+        <div class="left-container">
+            <label>
+                <span class="class-line"></span>
+                <span class="class-line"></span>
+                <span class="class-line"></span>
+            </label>
+            <div class="menu-lists">
+                <ul>
+                    <li class="sun">SUN NEWS</li>
+                    <li><a href="world.html">world</a></li>
+                    <li><a href="politics.html">politics</a></li>
+                    <li><a href="sports.html">Sports</a></li>
+                </ul>
+            </div>
+        </div>
+      <!--<div class="right-container">
+            <div class="audio">Audio</div>
+                <div class="search">Search</div>
+                <div class="log-in">Log in</div>
+            
+        </div> -->
+
+    </header>
+    <section class="class-top">
+        <div class="headlines">
+            <h1 class="h-type">PODCAST:</h1>
+            <h1 class="h-title">ENTERTAINMENT</h1>
+        </div>
+        <div class="headlines">
+            <h1 class="h-type">ENTERTAINMENT : </h1>
+            <h1 class="h-title">In photos | Updates movies</h1>
+        </div>
+        <div class="headlines">
+            <h1 class="h-type">TRENDING:</h1>
+            <h1 class="h-title">MCU Breaking the internet |</h1>
+            <h1 class="h-title">Dr.Doom</h1>
+        </div>
+    </section>
+
+    <section class="updates">
+      <div>
+        <div class="left-updates">
+            <h1 class="left-updates-top">When and where will Thalapathy Vijay's TVK first conference happen? - Latest deets</h1>
+            
+            <p class="para">Rumours have been circulating for some time about the first political conference of Thalapathy Vijay's Tamilaga Vettri Kazhagam (TVK). Earlier, we reported that this significant event is set to take place in Trichy soon. According to the latest updates, Vijay is planning to hold the grand Maanaadu at the G Corner Ground in Ponmalai, Trichy.
+
+            </p> 
+            <img src="images/ga1.webp" class="image1"/>
+            <p class="para">n an exciting development, TVK members have reportedly sought permission from the railway department to host the political conference at this location. It is widely speculated that Vijay plans to unveil the party's flag at this much-anticipated gathering. While whispers suggest that the Maanaadu might take place on September 25th, we are still awaiting official confirmation.</p> <h1 class="left-updates-top"></h1>
+            <img src="images/ga2.webp" class="image1"/>
+            <p class="para">This news has been making waves across the internet today. On the cinematic front, Thalapathy Vijay is gearing up for the release of his next film, 'The Greatest Of All Time,' a sci-fi action saga directed by Venkat Prabhu, which is set to hit theatres on September 5th. Additionally, reports indicate that Vijay will be teaming up with director H Vinoth for his final film, tentatively titled 'Thalapathy 69'.</p> <h1 class="left-updates-top"></h1>
+            <img src="images/e10.jpg" class="image1"/>
+            
+            <h1 class="left-updates-top1">Phir Aayi Hasseen Dillruba movie review: Taapsee Pannu, Vikrant Massey film goes full-tilt at grown-up, amoral romance territory </h1>
+            <img src="images/e1.jpg" class="image1"/>
+            <p class="para">The sequel to the 2021 Haseen Dillruba manages to hit all the marks that the original fumbled at: it is atmospheric, deliciously squelchy, overrun with characters who revel in using love, sex and dhokha as means to their dubious ends. It’s been a while since I’ve had this much fun with a Hindi film which goes full-tilt at grown-up, amoral romance territory.<br><br>
+
+                Phir Aayi Hasseen Dillruba, this time with an extra ‘s’ in ‘Hasseen’, loses no time in telling us just how unsettled our lovers-on-the-lam Rani (Taapsee Pannu) and Rishu (Vikrant Massey) continue to be: their Agra hide-out may be at some distance from the town they ran from, but their nemesis, in the shape of dogged cop (Aditya Srivastava), is still hot on their heels.<br><br>
+                             
+        </div>
+      </div>
+        <div>
+        <div class="middle-updates">
+        <h1 class="middle-updates-top">Raayan movie review: Dhanush crafts an almost compelling film that needed a lot more heft </h1>        
+        <img src="images/e2.avif" class="image1">
+        <P class="para">Landmark films are special, even if every actor tries to pipe down the hype by saying it is just another number. But Dhanush isn’t interested in such shenanigans, and goes for the jugular by directing himself in his 50th film, Raayan. Make no mistake, Raayan is all Dhanush, and yet, for the longest time, he stays in the shadows. His brothers, Muthuvelraayan (Sundeep Kishan) and Manickavelraayan (Kalidas Jayaram), get explosive introductions. One breaks a beer bottle over someone’s head, and the other smashes a guy through a mirror. His sister Durga (Dushara Vijayan) is feisty and knows she is the fulcrum of the house. And how is Kathavaraayan (Dhanush) introduced? He is simply stirring fried rice over a wok. It might seem ordinary, but of course, we know better, right? <br><br>
+
+            Raayan opens with a black-and-white and gorgeously shot flashback that establishes the reason why the eldest Raayan brings his three siblings to the city, meets Sekar (Selvaraghavan), and gives it his all to put a roof over their heads and food in their stomachs. The actors playing the younger version of the Raayan brothers are wonderful, and set the tone for a bloodthirsty revenge drama that goes into familiar places but takes a different route as and when possible. All is never well at the Raayan household, but somehow, they manage to eke out a living that is filled with hopes, dreams, and aspirations. </P> <br><br> 
+          
+             
+              <h1 class="middle-updates1"><hr>A new teaser of Suriya's 'Kanguva' to be launched on this date? - Hot updates</h1>
+              <img src="images/e5.jpg" class="image1"/>
+              <p class="para">Suriya is all set to make a grand return to the big screen with the highly anticipated magnum opus, "Kanguva," marking his theatrical comeback after 2022. Directed by Siruthai Siva, this fantasy action saga is slated for release on October 10. The film has already generated significant buzz, with its initial glimpse and teaser receiving widespread acclaim.
+              </p>   
+              <h1 class="middle-updates1">Chiyaan Vikram shares excerpts from his inspiring life story at the 'Thangalaan' audio launch!</h1>
+              <img src="images/e8.jpg" class="image1"/>
+              <p class="para">On Monday, the makers of Chiyaan Vikram's 'Thangalaan' launched the film's music album in a grand ceremony in Chennai. We already brought you the highlights of the event. Chiyaan Vikram treated his fans with an extraordinary speech about his inspiring life story to become an actor.
+
+
+                The actor said, "Since childhood, I dreamed of being an actor. My grades were good until the eighth grade, but once I became focused on acting, they slipped. I was always thinking about the characters I wanted to play, choosing demanding roles in school dramas. My passion grew stronger in college, where I won an award for playing the lead in a drama.</p>
+
+                       </div>
+        </div>
+        <div>
+        <div class="right-updates">
+          <h1 class="right-updates-top">The MCU Just Gave Marvel The Best Excuse To Reboot It After Avengers 6
+          
+            </h1>
+              <img src="images/e3.jpeg" class="image1"/>
+          <p class="para">The Marvel Cinematic Universe just set up the best excuse to reboot the franchise after Avengers: Secret Wars via the plot of Deadpool & Wolverine. With a now 16-year history behind it, the MCU's overarching world and story has become increasingly elaborate, with different characters, factions, and even planets being regularly introduced throughout its run. This has had several positive and negative knock-on effects for the franchise, as an increased amount of lore means more things for the MCU timeline itself to balance.
+
+            The MCU's consistent expansion and the issues that have unfolded from it have led to theories that an MCU reboot is in sight, with the most popular of these takes being that a soft reboot will come following Avengers: Secret Wars to allow the franchise to reconfigure any aspects of its world that would benefit from adjustment. Secret Wars alone suggests this is possible due to the comics using the story to reset its own universe, and this prospect is further supported by a concept introduced in Deadpool & Wolverine, which gives the MCU its best excuse yet to bring about a potential reboot in the franchise's upcoming Marvel releases.</p>
+            <h1 class="right-updates-top1">Deadpool & Wolverine's Anchor Beings Explanation Would Make An MCU Reboot Easy To Pull Off </h1>
+                 <img src="images/e4.avif" class="image1"/> 
+                   <p class="para">The MCU's Anchor Beings Makes A Reboot Much Easier To Explain
+                    Wolverine fighting Deadpool in the Void in Deadpool & Wolverine
+                    Other than the cameos and references galore Deadpool & Wolverine brings to the table, one of the most focused-on points of the movie following its release is that of its explanation of the MCU's anchor beings. As Paradox explains to Deadpool, anchor beings are figures whose lives are inherently tied to the survival of their universe, with their deaths beginning the slow degradation and decimation of their world. This is used to explain why Deadpool's own universe is dying, using the death of Wolverine in Logan to explain why Earth-10005 is set to be destroyed.
+                    
+                    However, this explanation also sets up a perfect excuse to reboot the main MCU timeline. Theories that Robert Downey Jr's Tony Stark was Earth-616's anchor being emerged immediately after the concept was revealed, and there's a real weight to this idea and the possibility of it letting the universe end and be reborn. This is especially true since the premise of an anchor being itself seems a somewhat meta way to address cinematic universes in the superhero genre themselves, which often do hinge on one or a few main characters or actors to carry the heart of its overarching story.</p>
+                    <h1 class="right-updates-top1"> Will Iron Man 4's Release Now Happen Following Robert Downey Jr.'s Doctor Doom Return?</h1>
+                    <img src="images/tonii.webp" class="image1"/> 
+                    <p class="para">As the Russo Brothers confirmed Downey Jr.'s MCU return at San Diego Comic-Con, the directors introduced him as "the one person who could play Victor von Doom," indicating he will not be a Tony Stark Variant.<br><br>
+
+                        Downey Jr.'s Doctor Doom is expected to hail from the same alternate universe in which Marvel's First Family will in The Fantastic Four: First Steps. Perhaps the Fantastic Four reboot will even debut the Oscar winner's new villain in 2025 to tease his rivalry with Reed Richards</p>
+
+                </div>
+        </div>
+    </section>
+
+       <footer class="footer">
+        <div class="con">
+               <div class="footer1">
+                <div class="footer-col">
+                  <h4>OUR PRODUCTRS</h4>
+                  <ul>
+                    <li><a href="CONTACT US .HTML">contant us</a></li>
+                    <li><a href="sub.html">Subscribe</a></li>
+                    <li><a href="sun reg.html">Register</a></li>
+                    <li><a href="">News letters</a></li>
+                    <li><a href="">Today’s Edition</a></li>
+                    <li><a href="">Install our app</a></li>
+                  
+
+                  </ul>
+                </div>
+                <div class="footer-col">
+                  <h4>OTHER PUBLICATIONS</h4>
+                  <ul>
+                    <li><a href="">Sun editions</a></li>
+                    <li><a href="">Sun international news</a></li>    
+                    <li><a href="">Sun sports</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=NLelCh0MSNU">Sun live</a></li>
+                    <li><a href="">Sun Standard</a></li>
+                  </ul>
+                </div>
+                <div class="footer-col">
+                  <h4>EXTRA</h4>
+                  <ul>
+                    <li><a href="">Advisor</a></li>
+                    <li><a href="">Puzzles</a></li>
+                    <li><a href="">All topics</a></li>
+                    <li><a href="">Betting offers</a></li>
+                    <li><a href="">Voucher codes</a></li>
+                    <li><a href="">Competitions and offers</a></li>
+                    <li><a href="">Sun adverstiing</a></li>
+                    <li><a href="">Working at the Independent</a></li>
+                  </ul>
+                </div>
+                <div class="footer-col">
+                  <h4>LEGAL</h4>
+                  <ul>
+                    <li><a href="">Code of conduct and complaints</a></li>
+                    <li><a href="">Contributors</a></li>
+                    <li><a href="">Cookie policy</a></li>
+                    <li><a href="">Privacy policy</a></li>
+                    <li><a href="">User policies</a></li>
+                    <li><a href="">Modern slavery Statement</a></li>
+                  
+                  </ul>
+                </div>
+                
+                  <div class="footer-col">
+                    <h4>Follow us</h4>
+                    <div class="links">
+                    <a href="https://www.facebook.com/SunNewsTamil/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/sunpictures/?hl=en"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://twitter.com/sunpictures?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.techzim.co.zw/2019/02/the-sun-is-setting-for-google-google-is-killing-the-project/"><i class="fa-brands fa-google-plus"></i></a>
+                    <a href="https://www.youtube.com/channel/UCIzXayRP7-P0ANpq-nD-h5g"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+              </div>
+               </div>
+              </footer>
+</body>
+</html>

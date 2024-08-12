@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        body{
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            background-color: white;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style: none;
+
+        }
+        header{
+            top: 0;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            background-color: black;
+            color: white;
+        }
+        .left-container{  
+            display: flex;
+            justify-content: space-around;
+        }
+        .left-container div{
+            margin: 1rem;
+        }
+        .class-line{
+            display: block;
+            width: 2rem;
+            height: .2rem;
+            background-color: #fff;
+            border-radius: 40px;
+            margin: .3rem;  
+          }
+          .menu-lists ul {
+            display: flex;
+            list-style: none;
+            text-decoration: none;
+            justify-content: space-between;
+          }
+          .menu-lists ul li{
+            margin: 0.5rem;
+          
+          }
+          .menu-lists ul li a{
+            color:white;
+          }
+          .menu-lists ul li a:hover{
+            color: red;
+          }
+          .menu-lists ul li a:active{
+            color: green;
+          }
+          .sun{
+            background-color: red;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+          .right-container{
+            display: flex;
+            justify-content: space-between;
+          }
+          .right-container div{
+            margin: 1rem;
+          }
+          .class-top{
+            display: flex;
+            width: 100%;
+            font-size: 0.7rem;
+            margin: 1rem;
+          }
+          .headlines{
+            display: flex;
+            justify-content: space-between;
+            margin: 1rem;
+          }
+          .h-type{
+            color: red;
+          }
+          .updates{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height:500px ;
+        
+          }
+          .updates div{
+            height:500px;
+            width: 400px;
+            margin: 15px;
+          
+          }
+        
+  
+          .left-updates-top{
+            font-weight: bold;
+            font-size: 2rem;
+          }
+          .image1{
+            max-width: 100%;
+
+          }
+      
+          
+
+          .right-updates-top{
+            font-weight: bold;
+            font-size: 2rem;
+          }
+          .right-updates .para{
+            padding-bottom: 20px;
+             font-weight: bolder;
+             font-size: 1rem;
+        }
+          hr{
+            padding-bottom:5px;
+          }
+        .left-updates .para{
+            padding-bottom: 20px;
+             font-weight: bolder;
+             font-size: 1rem;
+        }
+        .left-updates-top1{
+          padding-top: 200px;
+        }
+        .left-updates3 p{
+            color: grey;
+             
+        }
+        .middle-updates1{
+          padding-top:60px ;
+        }
+  
+        .middle-updates-top{
+            font-weight: bold;
+            font-size: 2rem;
+          }
+        .middle-updates .para{
+          padding-bottom:  20px ;
+            font-weight: bolder;
+            font-size: 1rem;
+        }
+        .middle-updates-more1 p{
+            color: gray;
+        }
+        
+        .con{
+          max-width: 1170px;
+        
+          margin: auto;
+        }
+        .footer1{
+          display: flex;
+          flex-wrap: wrap;
+        }
+        ul{
+          list-style: none;
+        }
+      .footer{
+        background-color: rgb(3, 3, 3);
+       
+        padding: 40px 0;
+        position:relative;
+        right: 0;
+        left: 0;
+        bottom: -125rem;
+      }
+ .footer-col{
+  width: 25%;
+  padding: 0 15px;
+
+ }
+ .footer-col h4{
+  font-size: 18px;
+  color: #fff;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+  font-weight: 500;
+  position: relative;
+ }
+ .footer-col h4::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #e91e63;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+ }
+ .footer-col ul li:not(:last-child){
+  margin-bottom: 10px;
+ }
+ .footer-col ul li a{font-size: 16px;
+  text-transform: capitalize;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 300;
+  color:#bbbb;
+  display: block;
+ 
+
+ }
+ .footer-col ul li a:hover{
+  color:#fff;
+  padding-left:10px;
+ }
+ .footer-col .links a{
+        display: inline-block;
+        height: 40px;
+        width: 40px;
+        background-color: rgba(70, 68, 68, 0.993);
+        margin: 0 10px 10px 0;
+        text-align: center;
+        line-height: 40px;
+        border-radius: 50%;
+        color: #fff;
+ }
+ @media(max-width: 767px){
+
+ }
+    </style>
+</head>
+<body>
+    <header >
+        <div class="left-container">
+            <label>
+                <span class="class-line"></span>
+                <span class="class-line"></span>
+                <span class="class-line"></span>
+            </label>
+            <div class="menu-lists">
+                <ul>
+                    <li class="sun">SUN NEWS</li>
+                    <li><a href="world.html">world</a></li>
+                    <li><a href="politics.html">politics</a></li>
+                    <li><a href="sports.html">Sports</a></li>
+                    <li><a href="entertainment.html">Entertainment</a></li>
+                </ul>
+            </div>
+        </div>
+      <!--<div class="right-container">
+            <div class="audio">Audio</div>
+                <div class="search">Search</div>
+                <div class="log-in">Log in</div>
+            
+        </div> -->
+
+    </header>
+    <section class="class-top">
+        <div class="headlines">
+            <h1 class="h-type">PODCAST:</h1>
+            <h1 class="h-title">WAYANAD LANDSLIDES</h1>
+        </div>
+        <div class="headlines">
+            <h1 class="h-type">WAYANAD LANDSLIDES : </h1>
+            <h1 class="h-title">In photos | Rescue operation </h1>
+        </div>
+        <div class="headlines">
+            <h1 class="h-type">TRENDING:</h1>
+            <h1 class="h-title">FESTIVAL |</h1>
+            <h1 class="h-title">INDIA WIN WC </h1>
+        </div>
+    </section>
+
+    <section class="updates">
+      <div>
+        <div class="left-updates">
+            <h1 class="left-updates-top">Wayanad landslides: 357 dead, over 200 still missing. </h1>
+            <img src="images/W.jpg" class="image1"/>
+            <p class="para">In the early hours of 30 July 2024, multiple landslides occurred at Punjrimattom, Mundakkai, Chooralmala, Attamala, Meppadi and Kunhome villages of Wayanad district, Kerala, India. Heavy rains triggered the collapse of hillsides, resulting in torrents of mud, water, and boulders cascading down onto the area. With at least 385 deaths reported, over 273 injuries, and 180 reported missing, the landslides marked one of the deadliest natural disasters in Kerala's history. The landslides are among several extreme weather events that have occurred in India in recent years.</p>
+    
+  
+                     <h1 class="left-updates-top1"><hr>Forefathers made Wayanad their home, now dreams lie buried here </h1>
+                     <p class="p">Almost everyone in Mundakkai, Chooralmala and other parts of the landslide-hit Wayanad hills trace their ancestry to people who were brought by the British from various parts of South India to work on the plantations.</p>
+                   <p class="p1">  <img src="images/w3.avif" class="image1"/>At Chooralmala, one of the villages worst hit by the landslides. (Shaju Philip) </p>
+                     <p class="para">Ashraf hasn’t known a life beyond the hills of Wayanad. He first came to Mundakkai village as a four-year-old, accompanying his parents who had moved from Nilambur in Malappuram district to work on the tea plantations. Like his parents before him, he found a job on the tea estates when he turned 22. But unlike them, he allowed himself to dream of a better life for himself and his four children.
+
+                        “I have always lived in the estate quarters – first with my parents and later, my wife and children. But I always dreamt of owning a piece of land. I recently bought 10 cents (around 4,355 sq ft), hoping I will some day build my own house,” he says.</p>
+                     
+                        <h1 class="left-updates-top1"><hr>Wayanad Landslide: Tech Entry In Relief Operations, Rescue Ops in Final Stages </h1>
+                        <p class="p"> A week after disastrous landslide in Kerala's Wayanad has killed over 360 people till now. The rescue operations are in last stage and relief operations are in full-wing. A Kochi based infotech firm has lent its expertise to streamline relief efforts for landslide survivors.</p>
+                       <img src="images/Kerala landslide latest updates.avif" class="image1"/>
+                        <p class="para">As a report by PTI, Rajith Ramachandran, co-founder of Faircode Infotech, and his team have volunteered their services to create a robust inventory management system at the relief material collection centre set up at St Joseph's Higher Secondary School. The innovative solution has greatly eased the task of revenue officials, who were struggling to keep track of the pouring in relief materials.</p>
+                     
+        </div>
+      </div>
+        <div>
+        <div class="middle-updates">
+        <h1 class="middle-updates-top">Coaching centre tragedy eye opener: Supreme Court notice to Delhi, Centre</h1>        
+        <img src="images/C.webp" class="image1">
+        <P class="para">The Supreme Court on Monday took note of the deaths of three IAS aspirants at a coaching centre in Delhi, and termed the incident an "eye-opener".
+            A bench headed by Justice Suryakant said,"We are not sure as to what effective measure has been taken so far by NCT of Delhi or the Union of India. The recent unfortunate incidents taking away the lives of some of the young ones who joined coaching centres for their career pursuits are eye-openers for one and all."</P>
+            <hr>
+            <p>
+                Olympian Yusuf Dikec, 51, shoots question to Elon Musk on X, billionaire replies
+            </p>
+            <p>
+                Supreme Court notes deaths of 3 IAS aspirants at coaching centre
+Questions safety measures by Delhi government, Centre
+Issues notice to show compliance with safety norms
+            </p>
+        
+              <h1 class="middle-updates1"><hr>How Bangladesh’s students carried out world’s first Gen Z revolution</h1>
+              <img src="images/ban.avif" class="image1"/>
+              <p class="para">Bangladesh is no stranger to student protests, but rarely has the country witnessed such large numbers of inexperienced young people take on a giant such as Sheikh Hasina Wazed.
+
+                The protests began in June when thousands of school, college and university students, mostly in their 20s, poured onto the streets across the country, demanding an end to a system ensuring 30 per cent of government jobs went to the descendents of independence war heroes – and later the resignation of the prime minister.
+                The month-long protest culminated on Monday with extraorindary scenes as ordinary Bangladeshis stormed prime minister Hasina's palatial official residence, forcing her to flee the country in an unceremonious end to her 20 years in power across two spells.
+
+                As she fled with her daughter and sister to India, protesters rejoiced in streets still stained by blood from violent clashes between students, the security forces and counter-protesters from the ruling party Awami League's student wing.
+                
+                "There was a sense of ecstasy in the air, a sense of joy and celebration that we had collectively put an end to the barbaric rule of Sheikh Hasina," Saima Rehman, a 22-year-old university student, told The Independent.</p>
+                 
+              <h1 class="middle-updates1"><hr>Bangladesh crisis LIVE Updates: Muhammad Yunus to return to Bangladesh on August 8; Indian High Commission in Dhaka remains functional</h1>
+              <img src="images/bbbbb.jpeg" class="image1"/>
+              <p class="para">Air India and IndiGo operated special flights to Dhaka, bringing more than 400 people amid a volatile situation in the Bangladesh capital. A special Air India flight brought 205 people, including 6 infants, from Dhaka to New Delhi on Wednesday (August 7, 2024), an official said.
+
+                Bangladesh President Mohammed Shahabuddin dissolved Parliament on Tuesday and appointed Nobel laureate Mohammad Yunus as the head of an interim government, a day after Prime Minister Sheikh Hasina abruptly resigned and fled the country following weeks of violent protests.</p>
+              </div>
+        </div>
+        <div>
+        <div class="right-updates">
+          <h1 class="right-updates-top">Vinesh’s defensive coup against Yui Susaki: Of octopus defense, an elusive knee and cerebral chaos </h1>
+          <img src="images/v1.webp" class="image1"/>
+          <p class="para">The snap of the right knee that Vinesh Phogat had naively left unguarded against Sun Yunan and how she collapsed in a teary heap, had sent a wave of wincing through the Rio de Janeiro wrestling venue of 2016 Olympics as it showed up on the big screen. The Chinese had attacked Vinesh’s defenceless flanking limb cunningly, bent and mangled it, and left it flailing and limp. An ambulance was wheeled in right upto the side door, and Vinesh’s Olympic dream at the height of her prowess, left the hall, trailing the siren of the hospital van.
+            Phogat would never make that rookie error in defense ever again. Against Yui Susaki, who’d not lost 82 times since her 5th grade, Vinesh pulled off nearly 5 and a half minutes of the most compact leg defense, that set up her eventual progress.
+            It took Susaki a while to comprehend just how resolutely Vinesh was intending to defend. But even when she went for a single leg attack around the 3:10 mark, Vinesh ensured her feet remained elusive and out of bounds for the Japanese ace, known for not conceding a single point in Tokyo.
+            The 4-time World champion in 50 kg, a mythical icon back in Japan, in fact got deceived by having not conceded any point, and was completely lulled by the 2 passivity points Vinesh cleverly gifted, before her last 10 second takedown, nudged Susaki out of gold medal contention.
+            The plan drawn out by Vinesh and Waller Akos was brilliant in its simplicity. But it needed the Japanese, known for her speedy rampaging, to be kept at bay, before the counterstrike was unfurled. It was a defensive dazzler, Maldini’s backline and Popovic’s Spurs would have been proud of.
+            Vinesh knew any ground-grappling would go against her. She needed to stay on her feet. Deny Susaki reach, and distance, and a bunch of points that come from engaging actively.
+            “Ladki ne kamaal ka game khelaa. Naa point lena Hai, naa point dena hai. Yeh plan tha. Mazaa aa gaya,” explained wrestling coach and commentator Kripa Bishnoi. (Woman played a wondrous tactic, neither taking nor giving any point. Fun came.)</p>
+                      
+
+                 <img src="images/v2.webp" class="image1"/> 
+                   <p class="para">The two passivity points were ‘gifts’, Bishnoi says, and it would’ve dawned on Susaki – a technical superiority win hoarder rather belatedly, that she hadn’t earned any technical points for a full 5 minutes. It was bound to draw out a mistake in the end.
+
+                    Susaki made one run for a single leg attack, post the halfway mark, and that’s where Vinesh’s power-defense came to the fore. The only significant daav, Bishnoi laughs, had been inciting a ‘galat-fehmi’ (deceptive lulling). But when Susaki went for Vinesh’s leg, from an arm’s length distance that Vinesh zealously guarded, the Japanese would lose attacking shape and her attack crumbled.
+                    
+                    It was because of what Vinesh had been chipping away at from the start. The Indian’s grips on the arm and shoulder are known to be chokeholds with finger pressure. “People think defense is just footwork or holds. This is wrestling. The best pehelwaans exert pressure from head to toe, like an octopus. It’s a multi-pronged defense. Vinesh applied excellent upper body pressure and kept rotating the Japanese, so her power moves would constantly lose direction,” Bishnoi explained.
+                    
+                    The most obvious element of the defense was maintaining a steady distance, and causing a muscle extension so Susaki’s holds never grasped. “Vinesh kept applying pressure on her shoulders, and forced her hips and neck to be bent. Usko zhukaa diya,” he said. Made her bow. Bishnoi added that Vinesh’s defensive pressure was also heaped during what were inopportune ‘breathing positions’ for the Japanese, a wrestling trick that needs years of observing.
+                    
+                    Forcing Susaki to fight very close to the mat, on an exceedingly low stance, meant Vinesh used the upward force of the mat on Susaki’s body while lumping pressure on her by looming over the top, to crush her balance and compelling her to attack from low centre of gravity. “It’s top defense, when you imbalance the opponent by piling the force on them, pushing them down. Kamar tooti toh samzho, wrestler khatam, (when the waist breaks, understand the wrestler is finished") he explained.</p>
+                
+      </div>
+        </div>
+    </section>
+
+       <footer class="footer">
+        <div class="con">
+               <div class="footer1">
+                <div class="footer-col">
+                  <h4>OUR PRODUCTRS</h4>
+                  <ul>
+                    <li><a href="CONTACT US .HTML">contant us</a></li>
+                    <li><a href="sub.html">Subscribe</a></li>
+                    <li><a href="sun reg.html">Register</a></li>
+                    <li><a href="">News letters</a></li>
+                    <li><a href="">Today’s Edition</a></li>
+                    <li><a href="">Install our app</a></li>
+                  
+
+                  </ul>
+                </div>
+                <div class="footer-col">
+                  <h4>OTHER PUBLICATIONS</h4>
+                  <ul>
+                    <li><a href="">Sun editions</a></li>
+                    <li><a href="">Sun international news</a></li>    
+                    <li><a href="">Sun sports</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=NLelCh0MSNU">Sun live</a></li>
+                    <li><a href="">Sun Standard</a></li>
+                  </ul>
+                </div>
+                <div class="footer-col">
+                  <h4>EXTRA</h4>
+                  <ul>
+                    <li><a href="">Advisor</a></li>
+                    <li><a href="">Puzzles</a></li>
+                    <li><a href="">All topics</a></li>
+                    <li><a href="">Betting offers</a></li>
+                    <li><a href="">Voucher codes</a></li>
+                    <li><a href="">Competitions and offers</a></li>
+                    <li><a href="">Sun adverstiing</a></li>
+                    <li><a href="">Working at the Independent</a></li>
+                  </ul>
+                </div>
+                <div class="footer-col">
+                  <h4>LEGAL</h4>
+                  <ul>
+                    <li><a href="">Code of conduct and complaints</a></li>
+                    <li><a href="">Contributors</a></li>
+                    <li><a href="">Cookie policy</a></li>
+                    <li><a href="">Privacy policy</a></li>
+                    <li><a href="">User policies</a></li>
+                    <li><a href="">Modern slavery Statement</a></li>
+                  
+                  </ul>
+                </div>
+                
+                  <div class="footer-col">
+                    <h4>Follow us</h4>
+                    <div class="links">
+                    <a href="https://www.facebook.com/SunNewsTamil/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/sunpictures/?hl=en"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://twitter.com/sunpictures?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.techzim.co.zw/2019/02/the-sun-is-setting-for-google-google-is-killing-the-project/"><i class="fa-brands fa-google-plus"></i></a>
+                    <a href="https://www.youtube.com/channel/UCIzXayRP7-P0ANpq-nD-h5g"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+              </div>
+               </div>
+              </footer>
+</body>
+</html>
